@@ -1,10 +1,15 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Preconnect to external domains for better performance -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,9 +20,9 @@
   <!-- End Google Tag Manager -->
 
   <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Tushar Panthri | Data Engineer</title>
@@ -48,7 +53,8 @@
   <meta name="twitter:description" content="Data Engineer" />
   <meta name="twitter:url" content="https://x.com/TusharPanthri" />
   <meta name="author" content="Tushar Panthri" />
-  <meta name="description" content="Data Engineer with expertise in ETL pipelines, data analytics, and data modeling." />
+  <meta name="description" content="Tushar Panthri - Data Engineer and Data Science graduate student at Stony Brook University. 2+ years experience with Python, AWS, ETL pipelines, and data analytics. Specialized in building scalable data solutions." />
+  <meta name="keywords" content="Data Engineer, Data Science, Python, AWS, ETL, Machine Learning, Data Analytics, Tushar Panthri, Stony Brook University" />
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
@@ -65,8 +71,36 @@
   <link rel="manifest" href="/assets/img/favicon/manifest.json" />
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#008073" />
   <meta name="robots" content="index, follow" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tushar Panthri",
+    "url": "https://kenpachi99.github.io",
+    "image": "https://kenpachi99.github.io/assets/img/profile_pic_li.jpg",
+    "jobTitle": "Data Engineer",
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Stony Brook University"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "IP University"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/tushar-panthri-963ab814a/",
+      "https://github.com/Kenpachi99/",
+      "https://x.com/TusharPanthri"
+    ],
+    "knowsAbout": ["Data Engineering", "Python", "AWS", "ETL", "Machine Learning", "Data Analytics"]
+  }
+  </script>
 
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
@@ -76,7 +110,7 @@
       <li class="logo">
         <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
           class="brand-logo grey-blue-text">
-          <img src="/assets/img/profile_pic_li.jpg" class="circle img-responsive profile-pic" alt="avatar">
+          <img src="/assets/img/profile_pic_li.jpg" class="circle img-responsive profile-pic" alt="Tushar Panthri - Data Engineer profile picture" loading="eager">
         </a>
       </li>
 
@@ -145,9 +179,9 @@
   </nav>
 
   <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+  <nav class="hide-on-large-only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-target="slide-out"
+      class="sidenav-trigger"><i class="mdi-navigation-menu"></i></a>
     <div class="name-title">
       <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Tushar
         Panthri</a><span class="black-text">Data Engineer</span>
@@ -155,8 +189,8 @@
   </nav>
 
   <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
+  <nav class="hide-on-large-only">
+    <ul id="slide-out" class="sidenav">
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
@@ -298,8 +332,8 @@
           <div class="card-content">
             <div class="row">
               <div class="col s12 m2">
-                <a href="https://www.americanexpress.com/" target="_blank"><img alt="AMEX LOGO"
-                    src="/assets/img/amex_logo.png" class="responsive-img center-block" /></a>
+                <a href="https://www.americanexpress.com/" target="_blank"><img alt="American Express company logo"
+                    src="/assets/img/amex_logo.png" class="responsive-img center-block" loading="lazy" /></a>
               </div>
               <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
@@ -334,8 +368,8 @@
           <div class="card-content">
             <div class="row">
               <div class="col s12 m2">
-                <a href="https://www.ameriprise.com/" target="_blank"><img alt="Ameriprise logo"
-                    src="/assets/img/Ameriprise_Financial_logo.png" class="responsive-img center-block" /></a>
+                <a href="https://www.ameriprise.com/" target="_blank"><img alt="Ameriprise Financial company logo"
+                    src="/assets/img/Ameriprise_Financial_logo.png" class="responsive-img center-block" loading="lazy" /></a>
               </div>
               <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
@@ -416,8 +450,8 @@
           <div class="card-content">
             <div class="row">
               <div class="col s12 m2">
-                <a href="https://nolta.co.in/" target="_blank"><img alt="Nolta logo"
-                    src="/assets/img/nolta_india_private_limited_logo.jpg" class="responsive-img center-block" /></a>
+                <a href="https://nolta.co.in/" target="_blank"><img alt="NOLTA India Private Limited company logo"
+                    src="/assets/img/nolta_india_private_limited_logo.jpg" class="responsive-img center-block" loading="lazy" /></a>
               </div>
               <div class="col s12 m10">
                 <p>
@@ -460,7 +494,7 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/portfolio.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Portfolio analysis tool project screenshot" src="/assets/img/portfolio.png" style="height: 100%; width: 100%" class="activator" loading="lazy" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">Portfolio Analysis Tool<i
@@ -500,7 +534,7 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/colorize_gan.jpg" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Image colorizer GAN project screenshot" src="/assets/img/colorize_gan.jpg" style="height: 100%; width: 100%" class="activator" loading="lazy" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">Image Colorizer<i
@@ -541,8 +575,8 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/fake_news.jpg"
-                style="height: 100%; width: 100%" class="activator" />
+                <img alt="Fake news detector project screenshot" src="/assets/img/fake_news.jpg"
+                style="height: 100%; width: 100%" class="activator" loading="lazy" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">Fake News Detector<i
@@ -822,6 +856,11 @@
     </section>
   </main>
 
+  <!-- Dark Mode Toggle Button -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon" id="themeIcon"></i>
+  </button>
+
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
@@ -838,18 +877,54 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
   <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize scrollspy
+      var elems = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(elems);
+
+      // Initialize side navigation
+      var sidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sidenav, {
+        edge: 'left',
+        draggable: true
+      });
+
+      // Initialize tooltips
+      var tooltips = document.querySelectorAll('.tooltipped');
+      M.Tooltip.init(tooltips);
+
+      // Dark mode toggle functionality
+      const themeToggle = document.getElementById('themeToggle');
+      const themeIcon = document.getElementById('themeIcon');
+      const htmlElement = document.documentElement;
+
+      // Check for saved theme preference or default to light mode
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      htmlElement.setAttribute('data-theme', currentTheme);
+      updateThemeIcon(currentTheme);
+
+      themeToggle.addEventListener('click', function() {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+      });
+
+      function updateThemeIcon(theme) {
+        if (theme === 'dark') {
+          themeIcon.classList.remove('fa-moon');
+          themeIcon.classList.add('fa-sun');
+        } else {
+          themeIcon.classList.remove('fa-sun');
+          themeIcon.classList.add('fa-moon');
+        }
+      }
+    });
   </script>
 </body>
 
