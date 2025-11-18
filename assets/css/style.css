@@ -1,111 +1,18 @@
-/* CSS Custom Properties for theming */
-:root {
-  --primary-color: #008073;
-  --primary-dark: #004d40;
-  --primary-light: #a7ffeb;
-  --accent-color: #ffab40;
-  --text-primary: #333;
-  --text-secondary: #666;
-  --bg-color: #fafafa;
-  --card-bg: #fff;
-  --border-color: #ddd;
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --transition-speed: 0.3s;
-  --nav-bg: #fff;
-  --intro-bg: #a7ffeb;
-}
-
-/* Dark mode color scheme */
-[data-theme="dark"] {
-  --primary-color: #26a69a;
-  --primary-dark: #00897b;
-  --primary-light: #4db6ac;
-  --accent-color: #ffb74d;
-  --text-primary: #e0e0e0;
-  --text-secondary: #b0b0b0;
-  --bg-color: #1a1a1a;
-  --card-bg: #2d2d2d;
-  --border-color: #404040;
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --nav-bg: #2d2d2d;
-  --intro-bg: #1a2f2e;
-}
-
-/* Dark mode toggle button */
-.theme-toggle {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  cursor: pointer;
-  box-shadow: var(--shadow);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  transition: transform var(--transition-speed) ease, background var(--transition-speed) ease;
-}
-
-.theme-toggle:hover {
-  transform: scale(1.1);
-  background: var(--primary-dark);
-}
-
-.theme-toggle:active {
-  transform: scale(0.95);
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Improved typography */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Better focus states for accessibility */
-a:focus,
-button:focus {
-  outline: 3px solid var(--primary-color);
-  outline-offset: 2px;
-}
-
-a:focus:not(:focus-visible),
-button:focus:not(:focus-visible) {
-  outline: none;
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 3px solid var(--primary-color);
-  outline-offset: 2px;
-}
-
 .profile-pic {
   position: relative;
-  max-width: 130px;
-  max-height: 130px;
+  max-width:130px;
+  max-height:130px;
   width: auto;
   height: auto;
   overflow: hidden;
-  margin: -31px;
-  margin-left: -7px;
-  border: 6px solid rgba(0, 77, 64, 0.4);
+  /* display: inline-block; */
+  
+  
+  /* background-size: cover;  */
+  margin: -31px; 
+  margin-left:-7px;
+  border: 6px solid rgba(0, 77, 64, 0.4); 
   border-radius: 50% !important;
-  transition: transform var(--transition-speed) ease;
-}
-
-.profile-pic:hover {
-  transform: scale(1.05);
 }
 
 .profile-pic img {
@@ -217,10 +124,8 @@ button:focus-visible {
 /* body-color */
 
 body {
-  color: var(--text-primary);
+  color: #333;
   font-size: 18px;
-  background-color: var(--bg-color);
-  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
 /* body {
@@ -270,10 +175,9 @@ blockquote * {
 /* main nav */
 
 nav {
-  background: var(--nav-bg);
+  background: white;
   box-shadow: none;
   height: 0;
-  transition: background var(--transition-speed) ease;
 }
 
 /* nav {
@@ -315,24 +219,28 @@ dt {
   margin-left: 0.5rem;
 }
 
-ul.sidenav,
 ul.side-nav {
   width: 190px;
 }
 
-ul.sidenav li,
 ul.side-nav li {
   padding: 0;
 }
 
-ul.sidenav.fixed a,
-ul.side-nav.fixed a {
+/* ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: var(--primary-color);
+  color: rgb(48, 122, 207);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
-  transition: all var(--transition-speed) ease;
+} */
+
+ul.side-nav.fixed a {
+  box-sizing: content-box;
+  color: rgb(16, 202, 56);
+  display: block;
+  line-height: 100%;
+  padding: 10px 0 12px;
 }
 
 ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
@@ -340,16 +248,22 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
   font-weight: 200;
 }
 
-ul.sidenav.fixed li.logo,
+/* ul.side-nav.fixed li.logo {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  min-height: 90px;
+  padding: 30px 30px 40px;
+} */
+
 ul.side-nav.fixed li.logo {
-  background-color: var(--bg-color);
-  border-bottom: 1px solid var(--border-color);
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
   box-sizing: content-box;
   min-height: 90px;
   padding: 30px 30px 40px;
 }
 
-ul.sidenav.fixed li.logo a,
 ul.side-nav.fixed li.logo a {
   font-weight: 200;
   line-height: 100%;
@@ -360,10 +274,8 @@ ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) 
   border-left: 3px solid;
 }
 
-ul.sidenav.fixed.table-of-contents li:not(.logo) a span,
-ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
-ul#slide-out li:not(.logo) a span {
-  color: var(--text-primary) !important;
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
+  color: #333 !important;
 }
 
 li.logo span {
@@ -408,9 +320,8 @@ h3 {
 } */
 
 #intro.section {
-  background: var(--intro-bg) repeat;
+  background: #a7ffeb repeat;
   position: relative;
-  transition: background var(--transition-speed) ease;
 }
 
 #intro.section .container {
@@ -461,30 +372,6 @@ h3 {
 
 .card {
   margin-bottom: 60px;
-  box-shadow: var(--shadow);
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-  background-color: var(--card-bg);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-.card .card-content {
-  color: var(--text-primary);
-}
-
-.card .card-content p {
-  color: var(--text-primary);
-}
-
-.card ul li {
-  color: var(--text-primary);
-}
-
-.card ul li li {
-  color: var(--text-secondary);
 }
 
 .card .role {
@@ -704,29 +591,18 @@ small {
     padding-left: 0px;
     padding-top: 64px;
   }
-  ul.sidenav a,
   ul.side-nav a {
     line-height: 100%;
     padding: 0;
     width: 100%;
   }
   nav {
-    background: var(--nav-bg);
+    background: #fff;
     height: 64px;
     position: absolute;
   }
-  .theme-toggle {
-    bottom: 20px;
-    right: 20px;
-    width: 48px;
-    height: 48px;
-    font-size: 20px;
-  }
-  nav a.sidenav-trigger,
-  nav a.button-collapse,
-  nav a.sidenav-trigger i,
-  nav a.button-collapse i {
-    color: var(--primary-color);
+  nav a.button-collapse, nav a.button-collapse i {
+    color: #009688;
     height: 56px;
     line-height: 56px;
   }
